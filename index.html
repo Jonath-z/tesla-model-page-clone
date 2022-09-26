@@ -11,11 +11,16 @@
     <section class="relative h-screen">
       <img
         src="./assets/tesla-home1.jpeg"
-        class="h-screen w-full object-cover object-center"
+        class="h-screen w-full object-cover object-center xl:hidden"
+      />
+
+      <img
+        src="./assets/Model-S-Main-Hero-Desktop-LHD.jpeg"
+        class="hidden xl:block"
       />
 
       <div
-        class="absolute top-0 left-0 right-0 w-full h-full bg-gradient-to-t from-black to-transparent"
+        class="absolute top-0 left-0 right-0 w-full h-full bg-gradient-to-t from-black via-transparent to-transparent"
       >
         <div class="flex justify-between p-4 items-center">
           <svg
@@ -29,15 +34,40 @@
             ></path>
           </svg>
 
-          <button class="bg-black/10 px-3 py-1 rounded-sm text-sm">Menu</button>
+          <div class="hidden xl:block">
+            <ul class="flex gap-5">
+              <li>Model S</li>
+              <li>Model 3</li>
+              <li>Model X</li>
+              <li>Model Y</li>
+              <li>Solar Roof</li>
+              <li>Solar Pannel</li>
+            </ul>
+          </div>
+
+          <div class="hidden xl:block">
+            <ul class="flex gap-5">
+              <li>Shop</li>
+              <li>Account</li>
+              <li>Menu</li>
+            </ul>
+          </div>
+
+          <button class="bg-black/10 px-3 py-1 rounded-sm text-sm xl:hidden">
+            Menu
+          </button>
         </div>
-        <div class="flex flex-col justify-center items-center w-full pt-10">
-          <h1 class="text-4xl">Model S</h1>
-          <p>Plaid</p>
+        <div
+          class="flex flex-col justify-center items-center w-full pt-10 xl:pt-32"
+        >
+          <h1 class="text-4xl tracking-wide">Model S</h1>
+          <p class="font-normal tracking-wide">Plaid</p>
         </div>
 
         <div class="absolute bottom-0 text-white w-full p-5">
-          <ul class="grid grid-cols-3 justify-center items-center gap-2">
+          <ul
+            class="grid grid-cols-3 lg:grid-cols-4 justify-center items-center gap-2 md:w-2/3 lg:w-full xl:w-1/2 lg:justify-between md:mx-auto"
+          >
             <li class="flex flex-col justify-center items-center text-2xl">
               396mi
               <span class="text-xs text-gray-300"> Range (EPA est.) </span>
@@ -49,7 +79,7 @@
               200 mph <span class="text-xs text-gray-300">Top speed</span>
             </li>
             <li
-              class="col-span-3 justify-center items-center py-2 border-2 rounded-sm border-white w-full text-center mt-2"
+              class="xsm:col-span-3 justify-center items-center py-2 border-2 rounded-sm border-white w-full text-center mt-2 md:w-80 lg:w-full md:mx-auto"
             >
               <button>Order now</button>
             </li>
@@ -62,114 +92,144 @@
       class="w-screen relative flex flex-col items-center bg-black text-white"
     >
       <div
-        class="absolute bg-gradient-to-b from-black via-black w-full to-transparent h-56"
+        class="absolute bg-gradient-to-b from-black via-black w-full to-transparent h-96"
       >
-        <h1 class="text-center py-10 text-2xl">Interior of the Future</h1>
+        <h1 class="text-center py-10 text-2xl tracking-wide">
+          Interior of the Future
+        </h1>
       </div>
       <img
-        src="./assets/model-s -interior.webp"
-        class="h-screen object-cover"
+        src="./assets/MS-Interior-Hero-Desktop.jpeg"
+        class="h-screen object-cover xl:w-full xl:h-[1500px]"
       />
     </section>
 
     <section class="bg-black py-28">
-      <div class="py-20">
+      <div class="py-20 lg:px-8 xl:px-56">
         <video
           autoplay
           loop
-          class="my-22"
+          class="my-22 lg:w-full lg:rounded-xl lg:h-[500px] object-cover"
           src="https://tesla-cdn.thron.com/static/THBHMB_Model_S_Plaid_-_Carousel_-_Yoke_-_Mobile_840x560_MXGA7T.mp4?xseo="
         ></video>
-        <ul class="flex items-center gap-2 p-3">
-          <li class="h-4 w-4 bg-white/30 rounded-full"></li>
-          <li class="h-4 w-4 bg-white/30 rounded-full"></li>
-          <li class="h-4 w-4 bg-white/30 rounded-full"></li>
-          <li class="h-4 w-4 bg-white rounded-full"></li>
+        <ul
+          class="flex items-center gap-2 p-3 lg:pl-32 lg:pt-5 xl:pl-36 xl:pt-8"
+        >
+          <li class="h-4 w-4 xl:h-3 xl:w-3 bg-white/30 rounded-full"></li>
+          <li class="h-4 w-4 xl:h-3 xl:w-3 bg-white/30 rounded-full"></li>
+          <li class="h-4 w-4 xl:h-3 xl:w-3 bg-white/30 rounded-full"></li>
+          <li class="h-4 w-4 xl:h-3 xl:w-3 bg-white rounded-full"></li>
         </ul>
+
+        <div class="hidden lg:block text-white lg:pl-32 lg:pb-20 xl:pl-36">
+          <h2 class="text-sm pb-5 xl:font-bold">Cinematic Experience</h2>
+          <p
+            class="font-ui-sf-light text-xs xl:font-ui-sans-serif xl:tracking-wide"
+          >
+            A 17” touchscreen with left-right tilt offers 2200 x 1300<br />
+            resolution, true colors and exceptional responsiveness for
+            gaming,<br />
+            movies and more.
+          </p>
+        </div>
       </div>
-      <div class="p-3">
-        <p class="text-white">
-          A bold new approach gives you a true connection to Model S, offering
-          better steering feel and unobstructed views of your dash and the road
-          ahead. Tap the brake and Model S automatically selects the correct
-          direction to start your trip.
-        </p>
-      </div>
-      <div class="py-20">
-        <video
-          autoplay
-          loop
-          class="my-22"
-          src="https://tesla-cdn.thron.com/static/THBHMB_Model_S_Plaid_-_Carousel_-_Yoke_-_Mobile_840x560_MXGA7T.mp4?xseo="
-        ></video>
-        <!-- <ul class="flex items-center gap-2 p-3">
+      <div class="flex flex-col md:px-5 lg:px-24 xl:px-80">
+        <div
+          class="flex flex-col md:flex-row-reverse md:justify-center md:items-center"
+        >
+          <div class="p-3 md:w-full md:pl-20 md:pr-10">
+            <h3 class="hidden md:block text-sm pb-4 text-white xl:font-bold">
+              Stay connected
+            </h3>
+            <p
+              class="text-white md:text-sm md:font-ui-sf-light xl:font-ui-sans-serif xl:tracking-wide"
+            >
+              A bold new approach gives you a true connection to Model S,
+              offering better steering feel and unobstructed views of your dash
+              and the road ahead. Tap the brake and Model S automatically
+              selects the correct direction to start your trip.
+            </p>
+          </div>
+          <div class="py-20 md:w-full md:py-0">
+            <img src="./assets/MS-Interior-Grid-A-Desktop.jpeg" class="h-64" />
+            <!-- <ul class="flex items-center gap-2 p-3">
           <li class="h-4 w-4 bg-white/30 rounded-full"> </li>
           <li class="h-4 w-4 bg-white/30 rounded-full"> </li>
           <li class="h-4 w-4 bg-white/30 rounded-full"> </li>
           <li class="h-4 w-4 bg-white rounded-full"> </li>
-        </ul> -->
-      </div>
-      <div class="p-3">
-        <p class="text-white">
-          A bold new approach gives you a true connection to Model S, offering
-          better steering feel and unobstructed views of your dash and the road
-          ahead. Tap the brake and Model S automatically selects the correct
-          direction to start your trip.
-        </p>
-      </div>
-      <div class="py-20">
-        <video
-          autoplay
-          loop
-          class="my-22"
-          src="https://tesla-cdn.thron.com/static/THBHMB_Model_S_Plaid_-_Carousel_-_Yoke_-_Mobile_840x560_MXGA7T.mp4?xseo="
-        ></video>
-        <!-- <ul class="flex items-center gap-2 p-3">
+           </ul> -->
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:justify-center md:items-center"
+        >
+          <div class="p-3 w-full md:pr-7">
+            <h3 class="hidden md:block text-sm pb-4 text-white xl:font-bold">
+              Immersive Sound
+            </h3>
+            <p
+              class="text-white md:text-sm md:font-ui-sf-light xl:font-ui-sans-serif xl:tracking-wide"
+            >
+              A 22-speaker, 960-watt audio system with Active Road Noise
+              Reduction offers immersive listening and studio-grade sound
+              quality.
+            </p>
+          </div>
+          <div class="py-20 w-full md:py-0">
+            <video
+              autoplay
+              loop
+              class="my-22"
+              src="./assets/PIUCZZ_MS-Interior-Grid-2-Audio-Desktop_CLFX4X.mp4"
+            ></video>
+            <!-- <ul class="flex items-center gap-2 p-3">
           <li class="h-4 w-4 bg-white/30 rounded-full"></li>
           <li class="h-4 w-4 bg-white/30 rounded-full"></li>
           <li class="h-4 w-4 bg-white/30 rounded-full"></li>
           <li class="h-4 w-4 bg-white rounded-full"></li>
-        </ul> -->
-      </div>
-      <div class="p-3">
-        <p class="text-white">
-          A bold new approach gives you a true connection to Model S, offering
-          better steering feel and unobstructed views of your dash and the road
-          ahead. Tap the brake and Model S automatically selects the correct
-          direction to start your trip.
-        </p>
-      </div>
-      <div class="py-20">
-        <video
-          autoplay
-          loop
-          class="my-22"
-          src="https://tesla-cdn.thron.com/static/THBHMB_Model_S_Plaid_-_Carousel_-_Yoke_-_Mobile_840x560_MXGA7T.mp4?xseo="
-        ></video>
-        <!-- <ul class="flex items-center gap-2 p-3">
+              </ul> -->
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row-reverse md:justify-center md:items-center"
+        >
+          <div class="p-3 w-full md:pl-20 md:pr-10">
+            <h3 class="hidden md:block text-sm pb-4 text-white xl:font-bold">
+              Room for Everything
+            </h3>
+            <p
+              class="text-white md:text-sm md:font-ui-sf-light xl:font-ui-sans-serif xl:tracking-wide"
+            >
+              With front and rear trunks and fold-flat seats you can fit your
+              bike without taking the wheel off—and your luggage too.
+            </p>
+          </div>
+          <div class="py-20 w-full md:py-0">
+            <img src="./assets/MS-Interior-Grid-D-Desktop.jpeg" />
+            <!-- <ul class="flex items-center gap-2 p-3">
           <li class="h-4 w-4 bg-white/30 rounded-full"> </li>
           <li class="h-4 w-4 bg-white/30 rounded-full"> </li>
           <li class="h-4 w-4 bg-white/30 rounded-full"> </li>
           <li class="h-4 w-4 bg-white rounded-full"> </li>
-        </ul> -->
-      </div>
-      <div class="p-3">
-        <p class="text-white">
-          A bold new approach gives you a true connection to Model S, offering
-          better steering feel and unobstructed views of your dash and the road
-          ahead. Tap the brake and Model S automatically selects the correct
-          direction to start your trip.
-        </p>
+              </ul> -->
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="relative h-[500px]">
+    <section class="relative h-[500px] md:h-[550px] lg:h-[1000px] xl:h-[690px]">
       <img
         src="https://tesla-cdn.thron.com/delivery/public/image/tesla/42366a1a-8a97-419e-80a3-4991bc4c2b4d/bvlatuR/std/2882x4096/Model-S-Performance-Hero-Mobile-LHD"
-        class="h-full w-full object-cover"
+        class="h-full w-full object-cover xl:hidden"
+      />
+      <img
+        src="./assets/Model-S-Performance-Hero-Desktop-LHD.jpeg"
+        class="hidden xl:block w-full h-full object-cover"
       />
       <div class="absolute bottom-0 left-0 right-0 w-full">
-        <ul class="w-full flex justify-between items-center gap-3 p-5">
+        <ul
+          class="w-full flex justify-between md:w-1/2 md:mx-auto items-center gap-3 md:pb-16 p-5"
+        >
           <li
             class="flex flex-col justify-center items-center text-white text-2xl"
           >
@@ -193,29 +253,53 @@
     </section>
 
     <section class="relative">
-      <div class="bg-white text-black p-5">
-        <p class="text-lighter">Plaid</p>
-        <h1 class="text-2xl py-3">Beyond Ludicrous</h1>
-        <p>
+      <div class="bg-white text-black p-5 lg:hidden">
+        <p class="text-lighter font-ui-sf-light tracking-wide">Plaid</p>
+        <h1 class="text-2xl md:text-3xl py-3 md:pb-5">Beyond Ludicrous</h1>
+        <p class="font-ui-sf-light">
           Model S Plaid has the quickest acceleration of any vehicle in
           production. Updated battery architecture for all Model S trims enables
           back-to-back track runs without performance degradation.
         </p>
-        <button class="w-full border-[3px] border-black rounded-md py-2 my-5">
+        <button
+          class="w-full border-[3px] border-black rounded-md py-2 my-5 md:w-fit md:px-10"
+        >
           Order Now
         </button>
       </div>
-      <div class="bg-gray-100 py-16">
-        <h1 class="text-2xl p-3">Electric Power Train</h1>
-        <p class="p-3">
+
+      <div
+        class="p-5 hidden lg:grid grid-cols-2 lg:py-6 lg:px-24 xl:px-80 xl:py-10"
+      >
+        <div class="flex flex-col">
+          <p class="font-ui-sf-light">Plaid</p>
+          <h1 class="text-2xl md:text-3xl md:pb-5 pb-3">Beyond Ludicrous</h1>
+          <button
+            class="border-[3px] border-black rounded-md w-full py-2 md:w-fit md:px-10"
+          >
+            Order Now
+          </button>
+        </div>
+        <p class="pb-7 md:font-ui-sf-light">
+          Model S Plaid has the quickest acceleration of any vehicle in
+          production. Updated battery architecture for all Model S trims enables
+          back-to-back track runs without performance degradation.
+        </p>
+      </div>
+      <div class="bg-gray-light py-16 lg:px-7">
+        <h1 class="text-2xl md:text-3xl p-3 xl:px-80">Electric Power Train</h1>
+        <p class="p-3 font-ui-sf-light md:pb-16 xl:px-80">
           Model S platforms unite powertrain and battery technologies for
           unrivaled performance, range and efficiency. New module and pack
           thermal architecture allows faster charging and gives you more power
           and endurance in all conditions.
         </p>
-        <img src="./assets/2021-tesla-model-x-skatebo.webp" />
+        <img
+          src="./assets/2021-tesla-model-x-skatebo.webp"
+          class="lg:rounded-xl mx-auto"
+        />
 
-        <div class="w-full overflow-x-auto flex items-center">
+        <div class="w-full overflow-x-auto flex items-center lg:pt-9 xl:px-80">
           <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
             <p class="w-full">Model S</p>
             <p>
@@ -238,23 +322,30 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="py-5 border-t-[4px]  border-black mt-8 mx-10 w-full">
-          <p>Model S</p>
-          <p>       
-                 Dual Motor All-Wheel Drive unlocks more range than any other vehicle in our current lineup, with insane power and maximum control.
-          </p>
-          <ul class="py-5 flex flex-col gap-4">
-            <li class="flex flex-col text-2xl justify-start items-start">3.1s
-              <span class="text-xs">0-60 mph</span>
-            </li>
-            <li class="flex flex-col text-2xl justify-start items-start">3.1s
-              <span class="text-xs">0-60 mph</span>
-            </li>
-            <li class="flex flex-col text-2xl justify-start items-start">3.1s
-              <span class="text-xs">0-60 mph</span>
-            </li>
-          </ul>
-       </div> -->
+          <div
+            class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full opacity-40"
+          >
+            <p>Model S</p>
+            <p>
+              Dual Motor All-Wheel Drive unlocks more range than any other
+              vehicle in our current lineup, with insane power and maximum
+              control.
+            </p>
+            <ul class="py-5 flex flex-col gap-4">
+              <li class="flex flex-col text-2xl justify-start items-start">
+                3.1s
+                <span class="text-xs">0-60 mph</span>
+              </li>
+              <li class="flex flex-col text-2xl justify-start items-start">
+                3.1s
+                <span class="text-xs">0-60 mph</span>
+              </li>
+              <li class="flex flex-col text-2xl justify-start items-start">
+                3.1s
+                <span class="text-xs">0-60 mph</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -262,32 +353,46 @@
     <section class="bg-black text-white">
       <img
         src="https://tesla-cdn.thron.com/delivery/public/image/tesla/9f8e2f46-abae-4d49-9266-021975a6f086/bvlatuR/std/1390x1651/Model-S-Exterior-Hero-Mobile-Global"
-        class="h-full w-full obje"
+        class="h-full w-full md:h-[512px] object-cover lg:hidden"
       />
-
-      <div class="p-5">
+      <img
+        src="./assets/Model-S-Exterior-Hero-full-size.jpeg"
+        class="h-full w-full md:h-[512px] lg:h-full object-cover hidden lg:block"
+      />
+      <div class="p-5 lg:hidden">
         <p class="text-gray-300">Exterior</p>
-        <h1 class="text-2xl pb-3">Designed for Efficiency</h1>
-        <p class="pb-7">
+        <h1 class="text-2xl md:text-3xl md:pb-5 pb-3">
+          Designed for Efficiency
+        </h1>
+        <p class="pb-7 md:font-ui-sf-light">
           With a drag coefficient of just .208 Cd, the lowest on the planet,
           Model S is built for speed, endurance and range. Improved aerodynamics
           and a wider chassis offer more responsive performance so you can take
           corners quicker and with more confidence.
         </p>
-        <button class="border-[3px] border-white rounded-md w-full py-2">
+        <button
+          class="border-[3px] border-white rounded-md w-full py-2 md:w-fit md:px-10"
+        >
           Order Now
         </button>
       </div>
-    </section>
-    <section class="bg-black text-white py-10">
-      <img
-        src="https://tesla-cdn.thron.com/delivery/public/image/tesla/fe86a447-03fe-43ce-bf53-daff2a81210d/bvlatuR/std/3949x2217/Model-S-Exterior-Grid-A-Desktop-Global"
-        class="h-full w-full obje"
-      />
 
-      <div class="p-5">
-        <p class="text-gray-300 pb-3">Optimized aerodynamic</p>
-        <p class="pb-7">
+      <div
+        class="p-5 hidden lg:grid grid-cols-2 lg:py-6 lg:px-24 xl:px-80 xl:py-20"
+      >
+        <div class="flex flex-col">
+          <p class="text-gray-300">Exterior</p>
+          <h1 class="text-2xl md:text-3xl md:pb-5 pb-3">
+            Designed for <br />
+            Efficiency
+          </h1>
+          <button
+            class="border-[3px] border-white rounded-md w-full py-2 md:w-fit md:px-10"
+          >
+            Order Now
+          </button>
+        </div>
+        <p class="pb-7 md:font-ui-sf-light">
           With a drag coefficient of just .208 Cd, the lowest on the planet,
           Model S is built for speed, endurance and range. Improved aerodynamics
           and a wider chassis offer more responsive performance so you can take
@@ -296,13 +401,99 @@
       </div>
     </section>
 
-    <section>
-      <div class="relative">
-        <video loop autoplay class="h-96 object-cover">
+    <section class="bg-black text-white py-10 lg:px-24 xl:px-80">
+      <div class="block md:hidden">
+        <img
+          src="https://tesla-cdn.thron.com/delivery/public/image/tesla/fe86a447-03fe-43ce-bf53-daff2a81210d/bvlatuR/std/3949x2217/Model-S-Exterior-Grid-A-Desktop-Global"
+          class="h-full w-full obje"
+        />
+
+        <div class="p-5">
+          <p class="text-gray-300 pb-3">Optimized aerodynamic</p>
+          <p class="pb-7">
+            With a drag coefficient of just .208 Cd, the lowest on the planet,
+            Model S is built for speed, endurance and range. Improved
+            aerodynamics and a wider chassis offer more responsive performance
+            so you can take corners quicker and with more confidence.
+          </p>
+        </div>
+      </div>
+      <div class="hidden md:flex flex-col md:px-5">
+        <div
+          class="flex flex-col md:flex-row md:justify-center md:items-center"
+        >
+          <div class="p-3 md:w-full">
+            <h3 class="hidden md:block text-sm pb-4 text-white">
+              Relentless Performance
+            </h3>
+            <p class="text-white md:text-sm md:font-ui-sf-light">
+              Staggered, performance wheels and tires keep the car planted and
+              help transfer maximum power down to the road.
+            </p>
+          </div>
+          <div class="py-20 md:w-full md:py-0">
+            <img
+              src="./assets/Model-S-Exterior-Grid-A-Desktop-Global.jpeg"
+              class="h-64 w-full"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row-reverse md:justify-center md:items-center"
+        >
+          <div class="p-3 w-full md:pl-20 md:pr-7">
+            <h3 class="hidden md:block text-sm pb-4 text-white">
+              Optimized Aerodynamics
+            </h3>
+            <p class="text-white md:text-sm md:font-ui-sf-light">
+              Attention to detail on all exterior surfaces makes Model S the
+              most aerodynamic production car on Earth.
+            </p>
+          </div>
+          <div class="py-20 w-full md:py-0">
+            <img
+              src="./assets/Model-S-Exterior-Grid-B-Desktop-Global.jpeg"
+              class="h-64"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:justify-center md:items-center"
+        >
+          <div class="p-3 w-full">
+            <h3 class="hidden md:block text-sm pb-4 text-white">
+              Refined Styling
+            </h3>
+            <p class="text-white md:text-sm md:font-ui-sf-light">
+              An iconic silhouette meets refreshed,<br />
+              elegant proportions.
+            </p>
+          </div>
+          <div class="py-20 w-full md:py-0">
+            <img
+              src="./assets/Model-S-Exterior-Grid-C-Desktop-Global.jpeg"
+              class="h-64 w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="xl:grid xl:grid-cols-4">
+      <div class="relative xl:w-full xl:col-span-3">
+        <video
+          loop
+          autoplay
+          class="h-96 md:h-[550px] lg:h-[1000px] object-cover md:w-full"
+        >
           <source class="h-96" src="./assets/tesla-video-2.mp4" />
         </video>
-        <div class="absolute bottom-0 left-0 right-0 w-full">
-          <ul class="w-full flex justify-center items-center gap-5 p-5">
+        <div
+          class="absolute bottom-0 left-0 right-0 w-full md:w-3/4 md:mx-auto"
+        >
+          <ul
+            class="w-full flex justify-center md:justify-around md items-center gap-5 p-5"
+          >
             <li
               class="flex flex-col justify-center items-center text-white text-2xl"
             >
@@ -324,53 +515,164 @@
           </ul>
         </div>
       </div>
-      <div class="p-5">
+      <div class="p-5 lg:hidden">
         <p class="font-light">Range</p>
-        <h1 class="text-2xl pb-3">Go Anywhere</h1>
-        <p>
+        <h1 class="text-2xl md:text-3xl pb-5">Go Anywhere</h1>
+        <p class="font-ui-sf-light">
           With up to 405 miles of estimated range and access to the world’s
           largest and most powerful fast charging network, you’ll spend less
           time plugged in and more time on the road.
         </p>
-        <button class="border-[3px] border-black rounded-md w-full py-2 my-5">
+        <button
+          class="border-[3px] border-black rounded-md w-full py-2 my-5 md:w-fit px-10"
+        >
+          Order Now
+        </button>
+      </div>
+      <div
+        class="p-5 hidden xl:hidden lg:grid lg:grid-cols-2 lg:items-center lg:px-24 lg:py-10"
+      >
+        <div>
+          <p class="font-light">Range</p>
+          <h1 class="text-2xl md:text-3xl pb-5">Go Anywhere</h1>
+          <button
+            class="border-[3px] border-black rounded-md w-full py-2 my-5 md:w-fit px-10"
+          >
+            Order Now
+          </button>
+        </div>
+        <p class="font-ui-sf-light">
+          With up to 405 miles of estimated range and access to the world’s
+          largest and most powerful fast charging network, you’ll spend less
+          time plugged in and more time on the road.
+        </p>
+      </div>
+
+      <div class="p-5 hidden xl:flex xl:flex-col xl:justify-between xl:px-7">
+        <div>
+          <p class="font-light">Range</p>
+          <h1 class="text-2xl md:text-3xl pb-5">Go Anywhere</h1>
+          <p class="font-ui-sf-light">
+            With up to 405 miles of estimated range and access to the world’s
+            largest and most powerful fast charging network, you’ll spend less
+            time plugged in and more time on the road.
+          </p>
+        </div>
+        <button
+          class="border-[3px] border-black rounded-md w-full py-2 my-5 md:w-fit px-10"
+        >
           Order Now
         </button>
       </div>
     </section>
 
-    <section>
-      <h1 class="p-3 text-2xl">Freedom to Travel</h1>
-      <p class="py-5 px-3">
+    <section class="lg:py-20 lg:px-64">
+      <h1 class="px-3 py-3 md:text-3xl text-2xl lg:px-14">Freedom to Travel</h1>
+      <p class="py-5 px-3 font-ui-sf-light lg:px-14 xl:pb-20">
         Enter a destination on your touchscreen and Trip Planner will
-        automatically calculate your route with Superchargers along the way.
+        automatically calculate your route with<br class="hidden lg:block" />
+        Superchargers along the way.
       </p>
-      <img src="./assets/map_newyork_bg-2x.jpeg" class="h-80 object-cover" />
+      <img
+        src="./assets/map_newyork_bg-2x.jpeg"
+        class="h-80 md:h-[550px] object-cover md:w-full lg:rounded-xl"
+      />
       <div class="px-5">
-        <div class="w-full overflow-x-auto flex items-center">
-          <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
-            <p class="w-full text-xl">San Francisco</p>
-            <ul class="py-2 flex flex-col gap-4">
-              <li
-                class="flex flex-col text-2xl justify-start items-start font-bold"
-              >
-                196 miles
-              </li>
-            </ul>
+        <div class="flex">
+          <div class="w-full overflow-x-auto flex items-center">
+            <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
+              <p class="w-full text-xl">San Francisco</p>
+              <ul class="py-2 flex flex-col gap-4">
+                <li
+                  class="flex flex-col text-2xl justify-start items-start font-bold"
+                >
+                  196 miles
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="w-full hidden overflow-x-auto md:flex items-center opacity-40"
+          >
+            <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
+              <p class="w-full text-xl">Manattan to Boston</p>
+              <ul class="py-2 flex flex-col gap-4">
+                <li
+                  class="flex flex-col text-2xl justify-start items-start font-bold"
+                >
+                  211 miles
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="w-full hidden overflow-x-auto xl:flex items-center opacity-40"
+          >
+            <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
+              <p class="w-full text-xl">Manattan to Boston</p>
+              <ul class="py-2 flex flex-col gap-4">
+                <li
+                  class="flex flex-col text-2xl justify-start items-start font-bold"
+                >
+                  211 miles
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="w-full hidden overflow-x-auto xl:flex items-center opacity-40"
+          >
+            <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
+              <p class="w-full text-xl">Manattan to Boston</p>
+              <ul class="py-2 flex flex-col gap-4">
+                <li
+                  class="flex flex-col text-2xl justify-start items-start font-bold"
+                >
+                  211 miles
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <button
-          class="border-[3px] border-black rounded-md py-2 w-full mx-auto"
+          class="border-[3px] border-black rounded-md py-2 w-full mx-auto md:w-fit px-10 md:flex md:justify-center"
         >
           Learn more
         </button>
       </div>
     </section>
-    <section class="py-10">
-      <img src="./assets/Model-S-Safety-Hero-Mobile-Global-960x1140.jpeg" />
-      <div class="px-3">
+
+    <section class="py-10 md:py-20 xl:grid xl:grid-cols-4 xl:h-screen">
+      <div class="px-3 hidden xl:flex xl:flex-col xl:justify-between xl:px-10">
+        <div>
+          <p class="font-ui-sf-light pt-5 py-3">Safaty</p>
+          <h1 class="pb-3 text-2xl md:text-3xl">High Impact Protection</h1>
+          <p class="pb-5 text-gray-500 font-ui-sf-light">
+            Model S is built from the ground up as an electric vehicle, with a
+            high-strength architecture and floor-mounted battery pack for
+            incredible occupant protection and low rollover risk. Every new
+            Model S includes Tesla’s latest active safety features, such as
+            Automatic Emergency Braking, at no extra cost.
+          </p>
+        </div>
+        <button
+          class="border-[3px] border-black w-full py-2 rounded-md mt-5 md:w-fit md:px-10"
+        >
+          Order Now
+        </button>
+      </div>
+      <img
+        src="./assets/Model-S-Safety-Hero-Mobile-Global-960x1140.jpeg"
+        class="md:h-[500px] md:w-full md:object-cover xl:hidden"
+      />
+      <img
+        src="./assets/Model-S-Safety-Hero-Desktop-Global.jpeg"
+        class="h-full w-full object-cover object-center hidden xl:block xl:col-span-3"
+      />
+      <div class="px-3 lg:hidden">
         <p class="font-ui-sf-light pt-5 py-3">Safaty</p>
-        <h1 class="pb-3 text-2xl">High Impact Protection</h1>
-        <p class="py text-gray-500">
+        <h1 class="pb-3 text-2xl md:text-3xl">High Impact Protection</h1>
+        <p class="pb-5 text-gray-500 font-ui-sf-light">
           Model S is built from the ground up as an electric vehicle, with a
           high-strength architecture and floor-mounted battery pack for
           incredible occupant protection and low rollover risk. Every new Model
@@ -378,41 +680,68 @@
           Emergency Braking, at no extra cost.
         </p>
 
-        <button class="border-[3px] border-black w-full py-2 rounded-md mt-5">
+        <button
+          class="border-[3px] border-black w-full py-2 rounded-md mt-5 md:w-fit md:px-10"
+        >
           Order Now
         </button>
       </div>
+      <div
+        class="p-5 hidden xl:hidden lg:grid lg:grid-cols-2 lg:items-center lg:px-24 lg:py-16"
+      >
+        <div>
+          <p class="font-ui-sf-light">Safaty</p>
+          <h1 class="text-2xl md:text-3xl pb-5">
+            High Impact <br class="hidden lg:block" />
+            Protection
+          </h1>
+          <button
+            class="border-[3px] border-black rounded-md w-full py-2 my-5 md:w-fit px-10"
+          >
+            Order Now
+          </button>
+        </div>
+        <p class="font-ui-sf-light">
+          Model S is built from the ground up as an electric vehicle, with a
+          high-strength architecture and floor-mounted battery pack for
+          incredible occupant protection and low rollover risk. Every new Model
+          S includes Tesla’s latest active safety features, such as Automatic
+          Emergency Braking, at no extra cost.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <div class="relative py-10">
+    <section class="relative">
+      <div class="relative py-10 md:h-[600px] lg:h-[1000px] xl:h-[800px]">
         <img
-          class="h-96 object-cover"
+          class="h-96 object-cover md:w-full md:h-full"
           src="./assets/Autopilot-Hero-Vision-Desktop.jpeg"
         />
 
-        <div class="absolute bottom-0 left-0 right-0 w-full">
-          <ul class="w-full flex justify-center items-center gap-8 p-5">
+        <div class="absolute bottom-0 left-0 right-0 lg:w-full lg:h-full">
+          <ul
+            class="w-full flex justify-center items-center gap-8 p-5 md:-mt-44 lg:flex-col lg:justify-center lg:gap-20 lg:px-24 lg:items-start lg:-mt-0 lg:h-full"
+          >
             <li
-              class="flex flex-col justify-center items-center text-black text-2xl"
+              class="flex flex-col justify-center lg:items-start items-center text-black text-2xl"
             >
               360
-              <span class="text-xs font-ui-sf-light text-center"
-                >Degree <br />
+              <span class="text-xs font-ui-sf-light text-center lg:text-start"
+                >Degree <br class="lg:hidden" />
                 of visibility</span
               >
             </li>
             <li
-              class="flex flex-col justify-center items-center text-black text-2xl"
+              class="flex flex-col justify-center lg:items-start items-center text-black text-2xl"
             >
               250m
-              <span class="text-xs font-ui-sf-light text-center">
-                Of powerful <br />
+              <span class="text-xs font-ui-sf-light text-center lg:text-start">
+                Of powerful <br class="lg:hidden" />
                 visual processing
               </span>
             </li>
             <li
-              class="flex flex-col justify-center items-center text-black text-2xl"
+              class="flex flex-col justify-center lg:items-start items-center text-black text-2xl"
             >
               129
               <span class="text-xs font-ui-sf-light"> 0-60 mph* </span>
@@ -420,48 +749,242 @@
           </ul>
         </div>
       </div>
-      <div class="px-3">
-        <p class="font-ui-sf-light pt-5 py-3">Safaty</p>
-        <h1 class="pb-3 text-2xl">High Impact Protection</h1>
-        <p class="py text-gray-500">
-          Model S is built from the ground up as an electric vehicle, with a
-          high-strength architecture and floor-mounted battery pack for
-          incredible occupant protection and low rollover risk. Every new Model
-          S includes Tesla’s latest active safety features, such as Automatic
-          Emergency Braking, at no extra cost.
+      <div class="px-3 lg:hidden">
+        <p class="font-ui-sf-light pt-5 py-3">Autopilot</p>
+        <h1 class="pb-3 text-2xl md:text-3xl">Future of Driving</h1>
+        <p class="text-gray-500 font-ui-sf-light md:pb-5">
+          Autopilot enables your car to steer, accelerate and brake
+          automatically within its lane under your active<br />
+          supervision, assisting with the most burdensome parts of driving. With
+          over-the-air software updates, the latest enhancements are available
+          instantly.
         </p>
 
-        <button class="border-[3px] border-black w-full py-2 rounded-md mt-5">
+        <button
+          class="border-[3px] border-black w-full py-2 rounded-md mt-5 md:w-fit md:px-10"
+        >
           Order Now
         </button>
+      </div>
+
+      <div
+        class="p-5 hidden lg:grid lg:grid-cols-2 lg:items-center lg:px-24 lg:py-16 xl:px-80"
+      >
+        <div>
+          <p class="font-ui-sf-light">Autopilot</p>
+          <h1 class="text-2xl md:text-3xl pb-5">Future of Driving</h1>
+          <button
+            class="border-[3px] border-black rounded-md w-full py-2 my-5 md:w-fit px-10"
+          >
+            Order Now
+          </button>
+        </div>
+        <p class="font-ui-sf-light">
+          Autopilot enables your car to steer, accelerate and brake
+          automatically within its lane under your active<br />
+          supervision, assisting with the most burdensome parts of driving. With
+          over-the-air software updates, the latest enhancements are available
+          instantly.
+        </p>
       </div>
     </section>
 
     <section>
       <div class="pt-20 px-3">
-        <h1 class="text-2xl pb-5">Features</h1>
-        <p class="pb-2 font-medium text-gray-500">
+        <h1 class="text-2xl pb-5 md:text-3xl lg:px-24 xl:px-80">Features</h1>
+        <p
+          class="pb-2 font-medium text-gray-500 font-ui-sf-light lg:px-24 xl:px-80"
+        >
           Enhanced Autopilot and Full Self-Driving capability introduce
           additional features and improve existing functionality to make your
           car more capable over time, including:
         </p>
       </div>
-      <video autoplay loop>
+      <video autoplay loop class="xl:mx-auto">
         <source src="./assets/vision-video.mp4" class="h-96 object-cover" />
       </video>
 
-      <div class="w-full overflow-x-auto flex items-center">
-        <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
-          <p class="w-full text-xl">Model S</p>
-          <ul class="py-5 flex flex-col gap-4">
-            <li
-              class="flex flex-col font-light text-sm justify-start items-start"
+      <div class="w-full overflow-x-auto flex items-center xl:justify-center">
+        <div class="flex">
+          <div class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full">
+            <p class="w-full text-xl">Model S</p>
+            <ul class="py-5 flex flex-col gap-4">
+              <li
+                class="flex flex-col font-light text-sm justify-start items-start text-gray-500"
+              >
+                Automatically change lanes while driving on the highway
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full opacity-40"
+          >
+            <p class="w-full text-xl">Model S</p>
+            <ul class="py-5 flex flex-col gap-4">
+              <li
+                class="flex flex-col font-light text-sm justify-start items-start text-gray-500"
+              >
+                Automatically change lanes while driving on the highway
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="py-5 border-t-[4px] border-black mt-8 mx-10 w-full opacity-40"
+          >
+            <p class="w-full text-xl">Model S</p>
+            <ul class="py-5 flex flex-col gap-4">
+              <li
+                class="flex flex-col font-light text-sm justify-start items-start text-gray-500"
+              >
+                Automatically change lanes while driving on the highway
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col gap-8 bg-black text-white md:grid md:grid-cols-2 md:items-center md:py-20"
+    >
+      <img src="./assets/Model-S-Specs-Hero-Mobile-LHD.jpeg" />
+      <div class="flex flex-col gap-8 p-4">
+        <h2 class="text-2xl">
+          <b>Model S</b> <span class="font-ui-sf-light">Specs</span>
+        </h2>
+        <div class="grid grid-cols-2 gap-2">
+          <ul class="flex flex-col gap-4">
+            <button
+              class="border-2 border-white w-full py-1 rounded-md text-sm"
             >
-              Automatically change lanes while driving on the highway
+              Model S paid
+            </button>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Range (EPA est.)
+              <span class="font-ui-sf-light">396 mi</span>
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              1/4 Mile
+              <span class="font-ui-sf-light text-sm"
+                >9.23@155 mph trap <br />
+                speed</span
+              >
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Peak Power
+              <span class="font-ui-sf-light text-sm">1,020 hp</span>
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Wheels
+              <span class="font-ui-sf-light text-sm">19" or 21"</span>
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Cargo
+              <span class="font-ui-sf-light text-sm">28 cu ft</span>
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Weight
+              <span class="font-ui-sf-light text-sm">4,766</span>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-4">
+            <button
+              class="border-2 border-semi-gray w-full py-1 rounded-md text-sm"
+            >
+              Model S
+            </button>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Acceleration
+              <span class="font-ui-sf-light"
+                >1.99 s 0-60 mph <span>with rollout subtracted</span></span
+              >
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              †Top Speed
+              <span
+                >200 mph
+                <span class="font-ui-sf-light"
+                  >when equipped with paid hardware upgrades</span
+                ></span
+              >
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Drag Coefficient
+              <span class="font-ui-sf-light">0.208 cd</span>
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Powertrain
+              <span class="font-ui-sf-light">Tri Motor</span>
+            </li>
+            <hr class="my-3 w-10" />
+            <li class="flex flex-col">
+              Supercharging Max
+              <span class="font-ui-sf-light">250 kW</span>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
+    <section
+      class="flex flex-col gap-5 w-full items-center md:grid md:grid-cols-2 md:py-20 bg-white md:h-[800px]"
+    >
+      <div class="flex flex-col md:pl-20 w-full px-4">
+        <h2 class="text-3xl py-8 text-center md:text-start">Model S</h2>
+        <div class="flex flex-col xl:flex-row xl:items-center xl:gap-2">
+          <button
+            class="border-2 border-black rounded-md w-full md:w-44 md:px-10 my-2 py-2 xl:w-fit xl:h-full"
+          >
+            Order Now
+          </button>
+          <button
+            class="border-2 border-black rounded-md w-full md:w-44 md:px-10 py-2 xl:w-fit xl:h-full"
+          >
+            Compare
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <img src="./assets/tesla-white.jpeg" class="md:w-full md:h-full" />
+      </div>
+    </section>
+
+    <footer>
+      <p class="text-center text-xs font-ui-sf-light px-10 text-gray-500">
+        Certain high data usage vehicle features require at least Standard
+        Connectivity, including maps,<br />
+        navigation and voice commands. Access to features that use cellular data
+        and third-party<br />
+        licenses are subject to change.<a class="underline pl-1" href="#"
+          >Learn more about Standard Connectivity and any limitations</a
+        >
+      </p>
+
+      <div class="py-10 text-gray-500 text-xs">
+        <ul class="flex flex-col justify-center items-center md:flex-row gap-3">
+          <li>Tesla © 2022</li>
+          <li>Privacy & Legal</li>
+          <li>Vehicle Recalls</li>
+          <li>Contact</li>
+          <li>Careers</li>
+          <li>News</li>
+          <li>Engage</li>
+          <li>Locations</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
